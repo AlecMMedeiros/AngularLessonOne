@@ -7,6 +7,9 @@ import { FirstPageComponent } from './first-page/first-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { PageWithParamsComponent } from './page-with-params/page-with-params.component';
+import { ProtectedPageComponent } from './protected-page/protected-page.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { PageWithParamsComponent } from './page-with-params/page-with-params.com
     FirstPageComponent,
     SecondPageComponent,
     NotFoundPageComponent,
-    PageWithParamsComponent
+    PageWithParamsComponent,
+    ProtectedPageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
